@@ -47,3 +47,22 @@ Repositories abstract data sources
 
 Each widget instance is independent
 
+
+🔄 Data Flow
+
+DashboardViewModel fetches widget metadata from the repository
+
+DashboardScreen renders widgets dynamically using this metadata
+
+For each widget:
+
+Banner widgets receive static data and render immediately
+
+List widgets create their own ViewModel using instanceId
+
+Each List widget:
+
+Fetches data independently
+
+Manages its own loading / success / error state
+
