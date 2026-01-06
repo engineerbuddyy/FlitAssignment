@@ -81,15 +81,15 @@ Example response:
 
 [
 
-  { "type": "banner", "instanceId": "pokemon" },
+      { "type": "banner", "instanceId": "pokemon" },
   
-  { "type": "banner", "instanceId": "cars" },
+      { "type": "banner", "instanceId": "cars" },
   
-  { "type": "banner", "instanceId": "bikes" },
+      { "type": "banner", "instanceId": "bikes" },
+   
+      { "type": "list", "instanceId": "movies" },
   
-  { "type": "list", "instanceId": "movies" },
-  
-  { "type": "list", "instanceId": "shows" }
+      { "type": "list", "instanceId": "shows" }
   
 ]
 
