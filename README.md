@@ -34,3 +34,14 @@ Domain (Repository Interface, Models)'
  
 Data (Repository Implementation, Fake APIs)
 
+
+📌 Key Design Principles
+
+UI is stateless and renders data only
+
+ViewModels own all logic and state
+
+Repositories abstract data sources
+
+Each widget instance is independent
+
