@@ -112,5 +112,22 @@ Uses LazyRow for horizontal scrolling
 BannerWidget(banners: List<BannerConfig>)
 
 
+2️⃣ List Widget
+
+Stateful
+
+Fetches data using a fake API
+
+Handles:
+
+Loading
+
+Success
+
+Error
+
+Each instance owns its state via instanceId
+
+
 
 
