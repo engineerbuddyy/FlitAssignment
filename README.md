@@ -146,3 +146,13 @@ ListWidgetViewModel(instanceId)
 
 
 
+This guarantees:
+
+Same widget type can appear multiple times
+
+No shared state between widget instances
+
+One widget failure does not affect others
+
+
+
