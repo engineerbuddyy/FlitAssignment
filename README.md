@@ -35,7 +35,9 @@ Domain (Repository Interface, Models)'
 Data (Repository Implementation, Fake APIs)
 
 
+
 📌 Key Design Principles
+
 
 UI is stateless and renders data only
 
