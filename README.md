@@ -142,5 +142,7 @@ Creates its own ViewModel
 
 Fetches data independently
 
+ListWidgetViewModel(instanceId)
+
 
 
