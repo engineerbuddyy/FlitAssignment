@@ -77,4 +77,21 @@ Manages its own loading / success / error state
   
 }
 
+Example response:
+
+[
+
+  { "type": "banner", "instanceId": "pokemon" },
+  
+  { "type": "banner", "instanceId": "cars" },
+  
+  { "type": "banner", "instanceId": "bikes" },
+  
+  { "type": "list", "instanceId": "movies" },
+  
+  { "type": "list", "instanceId": "shows" }
+  
+]
+
+
 
