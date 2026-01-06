@@ -71,9 +71,9 @@ Manages its own loading / success / error state
 
 {
 
-  "type": "banner" | "list",
+       "type": "banner" | "list",
   
-  "instanceId": "string"
+       "instanceId": "string"
   
 }
 
