@@ -15,4 +15,16 @@ Ensures widget state is isolated using instanceId
 
 Uses Jetpack Compose and MVVM
 
-Avoids business logic inside composables
+Avoids business logic inside composables.
+
+
+Architecture Overview
+
+UI (Compose)
+ ↓
+ViewModel
+ ↓
+Domain (Repository Interface, Models)
+ ↓
+Data (Repository Implementation, Fake APIs)
+
