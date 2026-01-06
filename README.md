@@ -132,5 +132,15 @@ Each instance owns its state via instanceId
 ListWidget(instanceId: String)
 
 
+🔐 State Isolation Using instanceId
+
+Each List widget:
+
+Receives a unique instanceId
+
+Creates its own ViewModel
+
+Fetches data independently
+
 
 
