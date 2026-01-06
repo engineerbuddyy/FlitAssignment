@@ -161,8 +161,8 @@ The UI is fully driven by backend metadata, widget state is isolated using insta
 
 
 <p align="center">
-  <img src="Image1.jpeg" width="45%" />
-  <img src="Image2.jpeg" width="45%" />
+  <img src="Image1.jpeg" width="25%" />
+  <img src="Image2.jpeg" width="25%" />
 </p>
 
 
