@@ -155,4 +155,15 @@ No shared state between widget instances
 One widget failure does not affect others
 
 
+🧠 Key Takeaway
+
+The UI is fully driven by backend metadata, widget state is isolated using instanceId, and the architecture cleanly separates concerns using MVVM and Jetpack Compose best practices.
+
+
+<p align="center">
+  <img src="Image1.jpeg" width="45%" />
+  <img src="Image2.jpeg" width="45%" />
+</p>
+
+
 
