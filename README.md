@@ -66,3 +66,15 @@ Fetches data independently
 
 Manages its own loading / success / error state
 
+
+📦 Widget Metadata Format
+
+{
+
+  "type": "banner" | "list",
+  
+  "instanceId": "string"
+  
+}
+
+
