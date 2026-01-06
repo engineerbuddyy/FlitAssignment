@@ -94,4 +94,19 @@ Example response:
 ]
 
 
+The UI renders widgets in the same order as the metadata.
+
+🧱 Widgets Implemented
+
+1️⃣ Banner Widget
+
+Stateless
+
+Fully driven by data
+
+Displays one or more banners
+
+Uses LazyRow for horizontal scrolling
+
+
 
