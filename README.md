@@ -109,4 +109,8 @@ Displays one or more banners
 Uses LazyRow for horizontal scrolling
 
 
+BannerWidget(banners: List<BannerConfig>)
+
+
+
 
