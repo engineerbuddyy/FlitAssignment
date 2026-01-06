@@ -22,15 +22,15 @@ Avoids business logic inside composables.
 
 UI (Compose)
 
- ↓
+   ↓
  
 ViewModel
 
- ↓
+   ↓
  
 Domain (Repository Interface, Models)'
 
- ↓
+   ↓
  
 Data (Repository Implementation, Fake APIs)
 
