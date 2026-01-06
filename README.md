@@ -3,68 +3,68 @@ Widgets are rendered purely based on metadata received from a backend source, wi
 
 📌 Problem Statement
 
-Build a dashboard screen that:
+🔴 Build a dashboard screen that:
 
-Displays a vertical list of widgets
+🔴 Displays a vertical list of widgets
 
-Renders widgets only from backend metadata
+🔴 Renders widgets only from backend metadata
 
-Supports multiple instances of the same widget type
+🔴 Supports multiple instances of the same widget type
 
-Ensures widget state is isolated using instanceId
+🔴 Ensures widget state is isolated using instanceId
 
-Uses Jetpack Compose and MVVM
+🔴 Uses Jetpack Compose and MVVM
 
-Avoids business logic inside composables.
+🔴 Avoids business logic inside composables.
 
 
 📌Architecture Overview
 
-UI (Compose)
+    UI (Compose)
 
-   ↓
+        ↓
  
-ViewModel
+    ViewModel
 
-   ↓
+        ↓
  
-Domain (Repository Interface, Models)'
+    Domain (Repository Interface, Models)'
 
-   ↓
+        ↓
  
-Data (Repository Implementation, Fake APIs)
+    Data (Repository Implementation, Fake APIs)
 
 
 
 📌 Key Design Principles
 
 
-UI is stateless and renders data only
+🔴 UI is stateless and renders data only
 
-ViewModels own all logic and state
+🔴 ViewModels own all logic and state
 
-Repositories abstract data sources
+🔴 Repositories abstract data sources
 
-Each widget instance is independent
+🔴 Each widget instance is independent
 
 
-🔄 Data Flow
+   🔄 Data Flow
 
-DashboardViewModel fetches widget metadata from the repository
+🔴 DashboardViewModel fetches widget metadata from the repository
 
-DashboardScreen renders widgets dynamically using this metadata
+🔴 DashboardScreen renders widgets dynamically using this metadata
 
-For each widget:
+🔴 For each widget:
 
-Banner widgets receive static data and render immediately
+🔴 Banner widgets receive static data and render immediately
 
-List widgets create their own ViewModel using instanceId
+🔴 List widgets create their own ViewModel using instanceId
 
-Each List widget:
+    🔄 Each List widget:
 
-Fetches data independently
+🔴 Fetches data independently
 
-Manages its own loading / success / error state
+🔴 Manages its own loading / success / error state
 
 
 📦 Widget Metadata Format
@@ -98,33 +98,33 @@ The UI renders widgets in the same order as the metadata.
 
 🧱 Widgets Implemented
 
-1️⃣ Banner Widget
+   1️⃣ Banner Widget
 
-Stateless
+🔴 Stateless
 
-Fully driven by data
+🔴 Fully driven by data
 
-Displays one or more banners
+🔴 Displays one or more banners
 
-Uses LazyRow for horizontal scrolling
+🔴 Uses LazyRow for horizontal scrolling
 
 
 BannerWidget(banners: List<BannerConfig>)
 
 
-2️⃣ List Widget
+  2️⃣ List Widget
 
-Stateful
+🔴 Stateful
 
-Fetches data using a fake API
+🔴 Fetches data using a fake API
 
-Handles:
+🔴 Handles:
 
-Loading
+🔴 Loading
 
-Success
+🔴 Success
 
-Error
+🔴 Error
 
 Each instance owns its state via instanceId
 
@@ -132,27 +132,27 @@ Each instance owns its state via instanceId
 ListWidget(instanceId: String)
 
 
-🔐 State Isolation Using instanceId
+   🔐 State Isolation Using instanceId
 
-Each List widget:
+🔴 Each List widget:
 
-Receives a unique instanceId
+🔴 Receives a unique instanceId
 
-Creates its own ViewModel
+🔴 Creates its own ViewModel
 
-Fetches data independently
+🔴 Fetches data independently
 
-ListWidgetViewModel(instanceId)
+🔴 ListWidgetViewModel(instanceId)
 
 
 
 This guarantees:
 
-Same widget type can appear multiple times
+🔴 Same widget type can appear multiple times
 
-No shared state between widget instances
+🔴 No shared state between widget instances
 
-One widget failure does not affect others
+🔴 One widget failure does not affect others
 
 
 🧠 Key Takeaway
